@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <style type="text/css">
+        * {margin: 0; padding: 0; border: 0; outline: 0; background: transparent;}
+
+        table {
+            border-collapse: collapse;
+            margin-top: 10vh;
+            font-size: 32px;
+            width: 100%;
+        }
+
+        table td, table th {
+            border: 3.5px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        .special {
+            width: 25%;
+            height: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="6" rowspan="1" style="width: 33%;">1</td>
+            <td colspan="6" rowspan="3">2</td>
+        </tr>
+        <tr>
+            <td colspan="4" rowspan="4" style="width: 33%;">3</td>
+            <td colspan="2" rowspan="2" style="height: 10vh;">4</td>
+            
+        </tr>
+        <tr></tr>
+        <tr>
+            <td colspan="2" rowspan="3" style="height: 15vh;">5</td>
+            <td colspan="6" rowspan="3">6</td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td colspan="4" rowspan="1">7</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="special">8</td><td colspan="3" class="special">9</td>
+            <td colspan="3" class="special">10</td><td colspan="3" class="special">11</td>
+        </tr>
+    </table>
+</body>
+</html>

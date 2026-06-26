@@ -1,0 +1,464 @@
+/* косяки браузеров */
+* {margin: 0; padding: 0; border: 0; outline: 0; background: transparent;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,main,nav,section {display:block;}
+img, a img {vertical-align: top; border: 0; text-decoration: none;}
+b, i, u, a, p, span {vertical-align: baseline;}
+/* конец сброса всех косяков */
+
+/* *{
+    border: 1px solid red;
+} */
+
+body {background: white; font-family: Verdana, Geneva, sans-serif;}
+
+a, .text-baner, .baner-btn, .section-head, .best-head, .best-text, .best-btn, table, .help, .footer-nav {
+    font-family: a_AvanteLt; 
+    letter-spacing: 1px;
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.logo {
+    width: 175px;
+    height: auto;
+    margin: 1.2em auto;
+}
+
+.nav-box {
+    display: flex;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.hot-turs{
+    color: #29B1FE !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hot-turs:hover{text-decoration: none;}
+
+.turs-otels {
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.turs-otels:hover {
+    color: #0099FF;
+    text-decoration: underline;
+}
+
+.turs-otels:visited {
+    color: #9355da;
+    text-decoration: none;
+}
+
+.login-box {
+    text-align: center;
+    vertical-align: middle;
+    background: white url(img/avatar.png) left no-repeat;
+    padding: 5px 10px 5px 50px;
+    background-size: contain;
+    color: black;
+}
+.ssilka {text-decoration: none;}
+
+.ssilka:hover {
+    color: #0099FF;
+    text-decoration: underline;
+}
+
+.ssilka2{display: none;}
+
+.ssilka:visited {
+    color: #9355da;
+    text-decoration: none;
+}
+
+.box-baner {
+    margin: 0 auto;
+    background: white url(img/background.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+.box-baner-text {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20vh;
+    padding-left: 16vw;
+    color: white;
+}
+
+.text-zagol {
+    font-size: 40px;
+    font-family: a_FuturaOrto;
+    width: 600px;
+}
+
+.text-baner {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.baner-btn {
+    font-size: 16px;
+    margin-top: 8vh;
+    padding: 20px 30px;
+    background: #F4B335;
+    border-radius: 10px;
+    color: white;
+}
+
+.baner-btn:hover {
+    background: #D98F00;
+    border-radius: 10px;
+    color: white;
+}
+
+.baner-btn:active {
+    background: #b87b00;
+    border-radius: 10px;
+    color: white;
+}
+
+.main-box {
+    margin: 4vh auto;
+    max-width: 1200px;
+}
+
+.section-head {
+    margin: 16vh auto 6vh auto;
+    font-size: 24px;
+    text-align: center;
+}
+
+.best-hotel {
+    margin: 8vh auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.best-hotel-item {flex-basis: 50%;}
+
+.best-img {
+    width: 94%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.best-head {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 3em;
+    padding-right: 1em;
+    margin-left: 0.4vw;
+    width: 30vw;
+}
+
+.best-text {
+    font-size: 18px;
+    padding-right: 1em;
+    margin-bottom: 20px;
+    line-height: 24px;
+    margin-left: 0.4vw;
+    width: 30vw;
+}
+
+.best-right{ margin-left: 3.6vw  !important;}
+
+.best-btn {
+    font-size: 16px;
+    margin: 40px 0;
+    padding: 20px 30px;
+    border: 3px solid #F4B335;
+    border-radius: 10px;
+    color: #F4B335;
+    margin-left: 1vw;
+}
+
+.best-btn:hover {
+    border: 3px solid #D98F00;
+    color: #D98F00;
+}
+
+.best-btn:active {
+    border: 3px solid white;
+    background-color: #D98F00;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px 10px 20px 0;
+    width: 100%;
+    font-size: 16px;
+    min-width: 50%;
+}
+
+table td, table th{
+    border-top: 1px solid #29B1FE;
+    padding: 10px;
+    border-bottom: 1px solid #29B1FE;
+    /* grid-template-columns: auto auto; */
+    
+}
+table th{text-align: left;}
+table td{text-align: center;}
+
+table thead {background: #EAF8FF; font-weight: bold;}
+
+.table-text:focus {color: #F4B335; font-weight: bold;}
+
+.help {
+    margin: 4vh 10vh;
+    font-size: 20px;
+}
+
+.help li {padding-bottom: 1vh;}
+
+.spisok-img {
+    width: 26vh;
+    height: auto;
+    float: right;
+    opacity: 0.5; /*непрозрачность*/
+    margin: -2.2vh 10vh 0 0;
+}
+
+.footer-diz {background: #eeeeee;}
+
+.footer-box {
+    max-width: 1200px;
+    margin: 16vh auto 0 auto;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.footer-nav li {padding: 4vh 1vh;}
+
+.footer-nav a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.footer-nav a {
+    color: black; 
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.bold {font-weight: bold;}
+
+.icon-vk, .icon-yt, .icon-tg {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 20px 0 0 20px;
+}
+
+.icon-vk {background: url(img/vk.png) center no-repeat; background-size: contain;}
+.icon-yt {background: url(img/youtube.png) center no-repeat; background-size: contain;}
+.icon-tg {background: url(img/tg.png) center no-repeat; background-size: contain;}
+.icon-vk:hover {background: url(img/vk-active.png) center no-repeat; background-size: contain;}
+.icon-yt:hover {background: url(img/youtube-active.png) center no-repeat; background-size: contain;}
+.icon-tg:hover {background: url(img/tg-active.png) center no-repeat; background-size: contain;}
+
+.navbar-icon {
+    background: url(img/menu-burger.png) center no-repeat;
+    background-size: contain !important;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 5vw;
+    vertical-align: middle;
+    background-position: center;
+    background-size: 100%;
+    text-align: right;
+}
+
+@media screen and (max-width:767px), handheld and (max-width:767px){
+
+    ::-webkit-scrollbar {
+        width: 1;
+    }
+
+    .logo {
+    width: 200px;
+    height: auto;
+    margin: 1em auto 1em 1em;
+    }
+
+    .nav-box{
+        margin: 0 2vw 0 0;
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .hot-turs{display: none;}
+
+    .NAV{
+        display: flex;
+        background-color: #ecf8ff;
+        justify-content: right;
+    }
+
+    .login-box {
+        background: white url(img/avatar-blue.png) left no-repeat;
+        background-size: contain;
+        padding: 40px 40px 0 0;
+        margin-right: 5vw;       
+    }
+
+    .ssilka{display: none;}
+
+    .ssilka2{
+        display: inline-block;
+        opacity: 0;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        padding-bottom: 0px;
+        top: 100px;
+    }
+    
+    .box-baner {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .box-baner-text {
+    padding: 4vh 2vh;
+    color: #fff;
+    padding-top: 12vw;
+    padding-left: 10vw;
+    }
+
+    .text-zagol {
+    font-size: 32px;
+    width: 80vw;
+    }
+
+    .text-baner{font-size: 22px;}
+
+    .header-box {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    }
+
+    .best-head {
+    margin-bottom: 10px;
+    padding-top: 1em;
+    padding-right: 1em;
+    width: 98%;
+    }
+
+    .best-text{
+        margin-top: 2vh;
+        width: 98%;
+    }
+
+    .best-img {width: 98%;}
+
+    .best-hotel-item {
+        padding: 10px;
+        flex-basis: 100%;
+    }
+
+    .best-hotel{
+        margin: 6vh auto;;
+    }
+
+    .hotel-reverse{
+        flex-direction: column-reverse;
+    }
+
+    .best-btn {margin: 20px 0;}
+
+    .section-head {
+        margin: 5vh auto 0 auto;
+        font-size: 22px;
+    }
+
+    .help {
+    margin: 4vh 6vh;
+    font-size: 1.2em;
+    }
+
+    .spisok-img {
+    display: block;
+    width: 26vh;
+    height: auto;
+    float: none;
+    opacity: .5;
+    margin: 5vh auto 0 auto;
+    }
+
+    table{
+        margin: 5vh 2vh;
+        display: flex;
+        width: 95%;
+        border: 2px solid #29B1FE;
+    }
+
+    .table-head, table tbody, table thead th {display: inline-block;}
+
+    table tbody {
+        width: 100%;
+        position: relative;
+        overflow-x: auto;
+    }
+
+   .table-head {
+    float: left;
+    border-right: 1px solid #29B1FE;
+    border-left: 1px solid #29B1FE;
+    width: 100%;
+    }
+
+    table td, table th {
+        padding: 10px 2px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 50vw;
+        font-size: 15px;
+        text-overflow: ellipsis;
+    }
+
+    table thead th, table tbody th {
+        text-align: center;
+        background: #EAF8FF;
+        font-weight: bold;
+    }
+
+    table tbody tr {display: table-cell;}
+
+    table td {
+        display: block;
+        text-align: center;
+    }
+}

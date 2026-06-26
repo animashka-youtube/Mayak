@@ -1,0 +1,347 @@
+/* косяки браузеров */
+* {margin: 0; padding: 0; border: 0; outline: 0; background: transparent;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,main,nav,section {display:block;}
+img, a img {vertical-align: top; border: 0; text-decoration: none;}
+b, i, u, a, p, span {vertical-align: baseline;}
+/* конец сброса всех косяков */
+
+/* *{
+    border: 1px solid red;
+    box-sizing: border-box;
+  } */
+
+::-webkit-scrollbar {
+    width: 0;
+}
+ 
+body {background: white; font-family: Verdana, Geneva, sans-serif;}
+
+a, .text-baner, .baner-btn, .section-head, .best-head, .best-text, .best-btn, table, .help, .footer-nav {
+    font-family: a_AvanteLt; 
+    letter-spacing: 1px;
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.logo {
+    width: 175px;
+    height: auto;
+    margin: 1.2em auto;
+}
+
+.nav-box {
+    display: flex;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+}
+
+.nav-box li a {
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.nav-box li a:hover {
+    color: #0099FF;
+    text-decoration: underline;
+}
+
+.nav-box li a:visited {
+    color: #9355da;
+    text-decoration: none;
+}
+
+.active {color: #29B1FE !important;}
+
+.login-box {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+}
+
+.login-box a {
+    background: white url(img/avatar.png) left no-repeat;
+    padding-left: 40px;
+    padding-right: 10px;
+    background-size: contain;
+    text-decoration: none;
+    color: black;
+}
+
+.login-box a:hover {
+    color: #0099FF;
+    text-decoration: underline;
+}
+
+.login-box a:visited {
+    color: #9355da;
+    text-decoration: none;
+}
+
+.box-baner {
+    margin: 0 auto;
+    background: white url(img/background.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+.box-baner-text {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20vh;
+    padding-left: 26vw;
+    color: white;
+}
+
+.text-zagol {
+    font-size: 40px;
+    font-family: a_FuturaOrto;
+}
+
+.text-baner {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.baner-btn {
+    font-size: 16px;
+    margin-top: 8vh;
+    padding: 20px 30px;
+    background: #F4B335;
+    border-radius: 10px;
+    color: white;
+}
+
+.baner-btn:hover {
+    background: #D98F00;
+    border-radius: 10px;
+    color: white;
+}
+
+.baner-btn:active {
+    background: #b87b00;
+    border-radius: 10px;
+    color: white;
+}
+
+.main-box {
+    margin: 4vh auto;
+    max-width: 1200px;
+}
+
+.section-head {
+    margin: 16vh auto 6vh auto;
+    font-size: 24px;
+    text-align: center;
+}
+
+.best-hotel {
+    margin: 8vh auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-hotel-item {flex-basis: 50%;}
+
+.best-img {
+    width: 94%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.best-head {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 3em;
+    padding-right: 1em;
+    margin-left: 0.4vw;
+}
+
+.best-text {
+    font-size: 18px;
+    padding-right: 1em;
+    margin-bottom: 20px;
+    line-height: 24px;
+    margin-left: 0.4vw;
+}
+
+.best-right{ margin-left: 3.6vw  !important;}
+
+.best-btn {
+    font-size: 16px;
+    margin: 40px 0;
+    padding: 20px 30px;
+    border: 3px solid #F4B335;
+    border-radius: 10px;
+    color: #F4B335;
+    margin-left: 1vw;
+}
+
+.best-btn:hover {
+    border: 3px solid #D98F00;
+    color: #D98F00;
+}
+
+.best-btn:active {
+    border: 3px solid white;
+    background-color: #D98F00;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px 10px 20px 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+table td, table th {
+    border-top: 1px solid #29B1FE;
+    padding: 10px;
+    border-bottom: 1px solid #29B1FE;;
+}
+table th{text-align: left;}
+table td{text-align: center;}
+
+table thead {background: #EAF8FF; font-weight: bold;}
+
+.table-text:focus {color: #F4B335; font-weight: bold;}
+
+.help {
+    margin: 4vh 10vh;
+    font-size: 20px;
+}
+
+.help li {padding-bottom: 1vh;}
+
+.spisok-img {
+    width: 26vh;
+    height: auto;
+    float: right;
+    opacity: 0.5; /*непрозрачность*/
+    margin: -2.2vh 10vh 0 0;
+}
+
+.footer-diz {background: #eeeeee;}
+
+.footer-box {
+    max-width: 1200px;
+    margin: 16vh auto 0 auto;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 14px;
+    line-height: 30px;
+    align-content: center;
+}
+
+.footer-nav li {padding: 4vh 1vh;}
+
+.footer-nav a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.footer-nav a {
+    color: black; 
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.bold {font-weight: bold;}
+
+.icon-vk, .icon-yt, .icon-tg {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 20px 0 0 20px;
+}
+
+.icon-vk {background: url(img/vk.png) center no-repeat; background-size: contain;}
+.icon-yt {background: url(img/youtube.png) center no-repeat; background-size: contain;}
+.icon-tg {background: url(img/tg.png) center no-repeat; background-size: contain;}
+.icon-vk:hover {background: url(img/vk-active.png) center no-repeat; background-size: contain;}
+.icon-yt:hover {background: url(img/youtube-active.png) center no-repeat; background-size: contain;}
+.icon-tg:hover {background: url(img/tg-active.png) center no-repeat; background-size: contain;}
+
+@media screen and (max-width:760px), handheld and (max-width:760px){
+    .logo {
+    width: 170px;
+    height: auto;
+    margin: .4em auto;
+    }
+    .box-baner {
+    width: 100%;
+    height: auto;
+    }
+    .nav-box, .login-box {line-height: 40px;}
+    .nav-box li a {padding: 20px 10px;}
+    .login-box a {
+    background: none;
+    padding: 0 0 0 10px;
+    }
+    .box-baner-text {
+    padding: 4vh 2vh;
+    color: #fff;
+    }
+    .text-zagol {
+    font-size: 2em;
+    width: 100%;
+    }
+    .header-box {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    }
+    .best-head {
+    margin-bottom: 10px;
+    padding-top: 1em;
+    padding-right: 1em;
+    }
+    .best-img {width: 98%;}
+    .best-hotel-item {padding: 10px;}
+    .best-btn {margin: 20px 0;}
+    .section-head {
+    margin: 2vh auto;
+    font-size: 1.6em;
+    }
+    .help {
+    margin: 4vh 6vh;
+    font-size: 1.2em;
+    }
+    .spisok-img {
+    display: block;
+    width: 26vh;
+    height: auto;
+    float: none;
+    opacity: .5;
+    margin: 0 auto;
+    }
+    .best-hotel-item {flex-basis: 100%;}
+    table {
+    width: 94%;
+    margin: 2vh;
+    }
+    table tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    table td {margin: 0; width: 100%;}
+    table tr:hover {background: none;}
+    }

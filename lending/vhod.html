@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Поиск туров МаЯк</title>
+    <meta http-equiv="content-Type" content="text/html; charset=utf-8">  <!-- кодировка страницы -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- запрет сваливания браузера к старым версиям не ниже 8 -->
+    <link rel="stylesheet" href="stili-vhod.css"  type="text/css" media="all">
+</head>
+
+<body>
+    <header class="header-box">
+        <a href="/"><img src="img/logo.svg" alt="МаЯк" class="logo"></a>
+        <nav>
+            <ul class="nav-box">
+                <li><a href="index.html">Горящие туры</a></li>
+                <li><a href="oteli.html">Отели</a></li>
+                <li><a href="turi.html">Туры</a></li>
+            </ul>
+        </nav>
+        <div class="login-box"><a href="/">Войти</a></div>
+        <script defer src="script.js"></script>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="main-zagol">Регистрация</h1>
+            <h2 class="pod-zagol">Личные данные</h2>
+            <p class="zvezda-poyasn" style="margin-top: 2vh;">Поля, отмеченные звёздочкой, обязательны для заполнения</p>
+            <div class="form1"> 
+                <form class="main-form" action="" method="post" id="main-form">
+                    <div class="name-fam-main">
+                        <div class="name-fam">
+                            <div class="form1-group">
+                                <label for="username" class="text-form star_red" style="margin-top: 5vh">Имя</label>
+                                <input class="form-form" type="text" placeholder="введите имя" id="username" maxlength="30"/>
+                                <p class="NameNone">Введите имя</p>
+                                <p class="NameUnCorrect">Введите имя с большой буквы</p>
+                            </div>
+                            <div class="form1-group">
+                                <label for="calendar" class="text-form">День рождения</label>
+                                <input class="form-form" type="date" id="calendar">
+                            </div>
+                            <div class="form1-group">
+                                <label for="userpar" class="text-form star_red">Пароль</label>
+                                <input class="form-form" type="password" placeholder="введите пароль" id="userpar"/>
+                                <p class="PasswordNone">Введите пароль</p>
+                                <p class="PasswordUnCorrect">Пароль должен быть от 8 символов,<br/> содержать миниум одну большую и<br/> маленькую букву, цифру и спец.символ</p>
+                            </div>
+                            <div class="form1-group">
+                                <label class="text-form">Пол</label>
+                                <input class="perekl" type="radio" name="pol" id="pol_g" value="woman" checked><label for="pol_g" class="pereklp">Женский</label>
+                                <input class="perekl" type="radio" name="pol" id="pol_m" value="men"><label for="pol_m" class="pereklp">Мужской</label>
+                            </div>
+                        </div>
+                        <div class="name-fam">
+                            <div class="form1-group">
+                                <label for="userf" class="text-form star_red" style="margin-top: 5vh">Фамилия</label>
+                                <input class="form-form" type="text" placeholder="введите фамилию" id="userf" maxlength="30"/>
+                                <p class="FamiliaNone">Введите фамилию</p>
+                                <p class="FamiliaUnCorrect">Введите фамилию с большой буквы</p>
+                            </div>
+                            <div class="form1-group">
+                                <label for="Email" class="text-form star_red">Почта</label>
+                                <input class="form-form" type="text" placeholder="введите почту" id="Email" maxlength="30"/>
+                                <p class="EmailNone">Введите почту</p>
+                                <p class="EmailUnCorrect">Введите корретную почту. Пример: abcd@mail.ru</p>
+                            </div>
+                            <div class="form1-group">
+                                <label for="userpar2" class="text-form star_red">Повторите пароль</label>
+                                <input class="form-form" type="password" placeholder="повторите пароль" id="userpar2"/>
+                                <p class="Password2None">Введите повторно пароль</p>
+                                <p class="Password2UnCorrect">Пароль не совпадает</p>
+                            </div>
+                            <div class="form1-group">
+                                <label for="strana" class="text-form">Страна проживания</label>
+                                <select class="strana" name="strana" id="strana" size="1">
+                                    <option value="Russia" selected="selected">Россия</option>
+                                    <option value="Belarus">Беларуссия</option>
+                                    <option value="Kazahstan">Казахстан</option>
+                                    <option value="Ukraina">Украина</option>
+                                    <option value="Anglia">Англия</option>
+                                    <option value="USA">США</option>
+                                    <option value="Germania">Германия</option>
+                                    <option value="Ispania">Испания</option>
+                                    <option value="Kitai">Китай</option>
+                                    <option value="Japan">Япония</option>
+                                </select>
+                             </div>
+                        </div>
+                    </div>
+                    <h2 class="pod-zagol">Детали</h2>
+                    <label class="text-form-rassilki">Какие рассылки вы хотите получать на свою почту?</label>
+                    <input class="check-box" type="checkbox" id="sale" value="sale" checked="checked"><label for="sale" class="pereklp">Туры со скидкой</label>
+                    <input class="check-box" type="checkbox" id="news" value="news" checked="checked"><label for="news" class="pereklp">Новые туры</label>
+                    <input class="check-box" type="checkbox" id="hot" value="hot" checked="checked"><label for="hot" class="pereklp">Горящие туры</label>
+                    <input class="check-box" type="checkbox" id="nothing" value="nothing"><label for="nothing" class="pereklp">Никакие</label>
+                    <label for="foto" class="text-form">Фото профиля</label><input class="input-img" type="file" id="foto">
+                    <label for="spase" class="text-form">Информация о вас</label><textarea name="spase" id="spase" cols="30" rows="5"></textarea>
+                    <input class="otpravka" name="otpravka" type="submit" value="Отправить">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer-diz">
+        <footer class="footer-box">
+            <ul class="footer-nav">
+                <li>&#9743; <span class="bold"><a href="tel:+74959999999">8 495 999 99 99</a></span><br/>
+                    <a href="/">Служба поддержки</a><br/>
+                    <a href="/">Как купить тур</a>
+                </li>
+
+                <li>&#9743; <span class="bold"><a href="tel:+78009999999">8 800 999 99 99</a></span><br/>
+                    Время работы:<br/>
+                    &#128340; 9:00 - 20:00
+                </li>
+
+                <li>&#9993; <span class="bold"><a href="mailto:podderzhka@mayak.ru">podderzhka@mayak.ru</a></span><br/>
+                    <a href="/">Помощь туристам</a><br/>
+                    <a href="/">Контакты</a></li>
+                <li>
+                    <span class="icon-vk"></span>
+                    <span class="icon-tg"></span>
+                    <span class="icon-yt"></span>
+                </li>
+                </ul>
+        </footer>
+    </div>
+</body>
+</html>
